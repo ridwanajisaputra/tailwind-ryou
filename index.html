@@ -16,11 +16,17 @@
                             <img src="asset/images/ic-menu.png" alt="menu" class="w-6 h-6 cursor-pointer">
                             <a href="#"><img src="asset/images/logo.png" alt="logo"></a>
                             <div class="flex items-center gap-6">
-                                <div>
-                                    <input type="radio" id="dark" name="mode" value="dark">
-                                    <label for="dark">Dark</label>
-                                    <input type="radio" id="white" name="mode" value="white">
-                                    <label for="white">White</label>
+                                <div class="flex">
+                                    <input type="checkbox" class="hidden" id="dark-toggle">
+                                    <label for="dark-toggle">
+                                        <div class="flex h-5 w-11 items-center gap-1 bg-black border rounded-full p-1 py-3 cursor-pointer">
+                                            <div class="toggle-circle gap-1 bg-[#d5ff40] flex h-4 w-4 rounded-full shadow-md transform transition-transform duration-200 ease-in-out">
+                                            </div>
+                                            <div class="gap-1 flex h-4 w-4 rounded-full shadow-md transform transition-transform duration-200 ease-in-out">
+                                                <img src="asset/images/icon-moon.png" alt="icon-sun" class="w-4 h-4 p-0"/>
+                                            </div>
+                                        </div>
+                                    </label>
                                 </div>
                                 <button class="cursor-pointer" type="button">Log In</button>
                             </div>
@@ -73,6 +79,7 @@
                 </div>
             </div>
         </header>
+        <!-- section main -->
         <main>
             <div class="bg-black text-white ">
                 <!-- section menu platform -->
@@ -270,6 +277,7 @@
                 </section>
             </div>
         </main>
+        <!-- section footer -->
         <footer class="bg-black">
             <div class="md:max-w-[1440px] w-full text-white mx-auto">
                 <div class="lg:px-24 lg:py-32 px-10 py-10">
